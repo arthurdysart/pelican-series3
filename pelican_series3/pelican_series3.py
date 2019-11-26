@@ -102,3 +102,4 @@ def apply_series(article_generator):
 # MAIN MODULE
 def register():
     signals.article_generator_finalized.connect(apply_series)
+

@@ -73,16 +73,16 @@ Create new JINJA2 HTML template:
 
 Accessible JINJA2 template variables:
 
-| JINJA2 variable             | Example                                          | Description                                                              |
+| JINJA2 variable             | Evaluation                                       | Description                                                              |
 |-----------------------------|--------------------------------------------------|--------------------------------------------------------------------------|
-| all_series                  | [("first-series", [<Obj-1>, ..., <Obj-N>]), ...] | Grouped `pelican.content.Article` objects according to series name.      |
+| all_series                  | [("first-series", [Obj-1, ..., Obj-N]), ...]     | Grouped `pelican.content.Article` objects according to series name.      |
 | article.series.name         | "first-series"                                   | Series name set in article metadata.                                     |
 | article.series.index        | 3                                                | Index of current article. May change during sorting!                     |
-| article.series.all          | [<Obj-1>, ..., <Obj-N>]                          | Ordered list of articles in series (inclusive).                          |
-| article.series.all_previous | [<Obj-1>, <Obj-2>]                               | Ordered list of articles published before current article (exclusive).   |
-| article.series.all_next     | [<Obj-4>, ..., <Obj-N>]                          | Ordered list of articles published after current article (exclusive).    |
-| article.series.previous     | <Obj-2>                                          | Last article in series (identical to `article.series.all_previous[-1]`). |
-| article.series.next         | <Obj-4>                                          | Next article in the series (identical to `article.series.all_next[0]`).  |
+| article.series.all          | [Obj-1, ..., Obj-N]                              | Ordered list of articles in series (inclusive).                          |
+| article.series.all_previous | [Obj-1, Obj-2]                                   | Ordered list of articles published before current article (exclusive).   |
+| article.series.all_next     | [Obj-4, ..., Obj-N]                              | Ordered list of articles published after current article (exclusive).    |
+| article.series.previous     | Obj-2                                            | Last article in series (identical to `article.series.all_previous[-1]`). |
+| article.series.next         | Obj-4                                            | Next article in the series (identical to `article.series.all_next[0]`).  |
 
 
 ## Description
